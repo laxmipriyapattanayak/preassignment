@@ -6,7 +6,7 @@
     text-decoration: none;
 }
 html{
-    font-size: 52%;
+    font-size: 15px;
     background-color: beige;
 }
 /*navigation menu*/
@@ -14,49 +14,87 @@ html{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
-    padding: 1rem 10rem;
-    position: sticky;
+    padding: 1rem 5rem;
+    position:sticky;
     background-color: rgb(7, 7, 92);;
     text-align: center;
 }
-nav ul{
+.nav_menu ul{
     display:flex;
-    gap: 7rem;
+    /*gap: 5rem;*/
 
 }
-nav ul li a{
-    padding:1rem;
+.nav_menu ul li a{
+    padding:7rem;
     color:white;
     
 }
 /*navigation menu end*/
 /*team members section*/
-h2{
+#member_title{
     text-align: center;
-    margin-top: 2rem;
+    margin-top: 1rem;
 }
-img {
+/*div.gallery {
+  border: 1px solid #ccc;
+}
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}*/
+ .team_member img {
     width:100%;
-    height:70%;
-}
+    height:auto;
+  }
 .team_members{
-    margin:1rem 10rem;
+    margin:1rem 15rem;
 
 }
 .team_member{
-    padding:0px;
-    margin:5px 8px;
+    padding-bottom:5px;
+    margin:5px 10px;
     float: left;
-    width:25%;
-    height:150px;
+    width:30%;
     border: 1px solid rgba(55, 44, 44, 0);
     background-color: rgb(7, 7, 92);
 
   }
-.container {
-     padding:3px;
-     font-size: 6px;
+.img_description {
+     padding:2px;
     text-align: center;
     color:white;
   }
@@ -69,92 +107,124 @@ img {
   /*footer*/
   .footer{
     display: flex;
-    min-height: 5vh;
+    justify-content: center;
+    align-items: center;
+    min-height:3vh;
+    width:100%;
+    position: sticky;
     gap:10rem;
-    font-size:40% ;
+    font-size:15px;
     color:#fff;
     background-color: rgb(7, 7, 92);
-    margin-bottom:5px;
   }
-  .footer_menu ul{
+  .footer_menu{
     display: flex;
     min-height: 5vh;  
     padding:2rem 2rem;  
   }
-  .footer_menu ul li a{
+  .footer_menu li a{
     color:white;
     margin:0px 5px;
   }
-  .footer_menu ul li a.solid_right{
+  .footer_menu li a.solid_right{
     border-right-style:solid;
     padding:1.5px;
     
   }
-  .footer_contact ul{
+  .footer_contact{
       margin:1rem;
   }
-  .footer_contact ul li{
+  .footer_contact li{
     margin:3px 0;
   }
   .footer_about{
-    margin-top: 2px;
+    margin: 2px 10px;
   }
   .footer_about h3{
-      font-size:8px;
       text-align: center;
   }
   .footer_about p{
-    margin-top: 2px;
-    font-weight:normal;
+    margin: 2px 0px 0px 10px;
   }
   .footer_media{
-    margin:0px 5px;
-    margin:0rem 6rem;
+    margin:0rem 12rem;
   }
   .footer_media a{
     color:#fff;
   }
   .footer_media a i{
-    font-size:1rem;
+    font-size:1.2rem;
     padding:2px;
   }
   /*footer end*/
+  /*responsive section*/
 /*@media screen and (max-width: 992px) {
+  
 }
-@media screen and (max-width: 768px) { 
+@media screen and (max-width: 700px) { 
+  
+  
 }*/
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 500px) {
     html{
-        font-size:20%;
+        font-size:13px;
     }
     .nav_menu{
         flex-direction:column;
     }
     nav ul{
+        margin:10px;
         flex-direction: column;
-        padding-left: 2.5rem;
+        gap:2rem;
     }
     .team_member{
         width:100%;
-      }
-      .footer{
-        display: block;
+    }
+    .team_members{
+      margin:10px;
+  
+  }
+    .footer{
+      display: block;
+      gap:8rem;
+      text-align: center;
+      font-size:15px;
+    }
+    .footer_menu{
+      display: flex;  
+      margin:1rem 5rem;  
+    }
+    
+    .footer_menu li a.solid_right{
+      border-right-style:solid;
+      padding:1.5px;
+      
+    }
+    .footer_contact{
+        margin:1rem;
+        font-size: 12px;
+    }
+    .footer_contact li{
+      margin:3px 0;
+    }
+    .footer_about{
+      margin-top: 2px;
+    }
+    .footer_about h3{
         text-align: center;
-        min-height: 5vh;
-        gap:10rem;
-        font-size:40% ;
-        color:#fff;
-        background-color: rgb(7, 7, 92);
-      }
-      .footer_menu ul{
-        text-align: center;
-        padding:2rem 13rem;
-      }
-      .footer_about{
-        margin-top: 3rem;
-      }
-      .footer_media a i{
-        font-size:2rem;
-        padding:2px;
-      }
+    }
+    .footer_about p{
+      margin: 2px 0px 0px 10px;
+      font-weight:40px;
+    }
+    .footer_media{
+      margin:0rem 12rem;
+    }
+    .footer_media a{
+      color:#fff;
+    }
+    .footer_media a i{
+      font-size:1.2rem;
+      padding:2px;
+    }
 }
